@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discrete Random Variable</title>
+
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <!-- Font Awesome for icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background: #f4f7fa;
+      color: #333;
+    }
+
+    .main-heading {
+      background: linear-gradient(to right, #00c6ff, #0072ff);
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-bottom: 40px;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .main-heading h1 {
+      font-weight: 700;
+      font-size: 48px;
+    }
+
+    .card-prob {
+      background-color: white;
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin: 0 auto;
+      max-width: 900px;
+    }
+
+    .section-title {
+      font-size: 26px;
+      font-weight: 600;
+      color: #0072ff;
+      margin-top: 30px;
+    }
+
+    .icon {
+      color: #00c6ff;
+      margin-right: 10px;
+    }
+
+    .formula {
+      background: #f0f8ff;
+      border-left: 5px solid #00c6ff;
+      padding: 15px 20px;
+      font-size: 18px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .note-box {
+      background: #fff5e6;
+      border-left: 5px solid #ff9500;
+      padding: 15px 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin: 60px 0 20px;
+      color: #aaa;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      max-width: 900px;
+      margin: 40px auto 20px;
+      padding: 0 20px;
+    }
+
+    .btn-custom {
+      width: 120px;
+      font-weight: 600;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="main-heading">
+    <h1><i class="fas fa-chart-bar"></i> Discrete Random Variable</h1>
+  </div>
+
+  <div class="card card-prob">
+
+    <h3 class="section-title"><i class="fas fa-dice icon"></i>Definition</h3>
+    <p>A random variable is called <strong>discrete</strong> if its range is either <em>finite</em> or <em>countably infinite</em>.</p>
+
+    <h3 class="section-title"><i class="fas fa-signal icon"></i>Probability Mass Function (PMF)</h3>
+    <div class="formula">
+      <p><strong>&Sigma; P(x) = 1</strong> &nbsp;&nbsp; and &nbsp;&nbsp; <strong>0 ≤ P(x) ≤ 1</strong></p>
+    </div>
+
+    <h3 class="section-title"><i class="fas fa-calculator icon"></i>Mean or Expectation</h3>
+    <div class="formula">
+      <p><strong>E(X) = &Sigma; x × P(x)</strong></p>
+    </div>
+
+    <h3 class="section-title"><i class="fas fa-chart-line icon"></i>Variance</h3>
+    <div class="formula">
+      <p><strong>Var(X) = E(X<sup>2</sup>) - [E(X)]<sup>2</sup></strong></p>
+    </div>
+
+    <h3 class="section-title"><i class="fas fa-ruler icon"></i>Standard Deviation</h3>
+    <div class="formula">
+      <p><strong>SD(X) = √Var(X)</strong></p>
+    </div>
+
+    <h3 class="section-title"><i class="fas fa-th icon"></i>Uniform Discrete Random Variable</h3>
+    <div class="formula">
+      <p><strong>P(X = x) = 1/n</strong></p>
+      <p><strong>E(X) = (a + b) / 2</strong></p>
+      <p><strong>Var(X) = (n<sup>2</sup> - 1) / 12</strong></p>
+    </div>
+
+    <div class="note-box">
+      <h5><i class="fas fa-lightbulb icon"></i>Tips:</h5>
+      <ul>
+        <li>Use PMF to define probabilities of each possible value of a discrete variable.</li>
+        <li>Expectation gives the average value in the long run.</li>
+        <li>Standard deviation and variance measure the spread of values.</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Prev / Next Navigation -->
+  <div class="nav-buttons">
+    <a href="https://shyam044.github.io/Conditional-Probability/" class="btn btn-danger btn-custom"><i class="fas fa-arrow-left"></i> Prev</a>
+    <a href="#" class="btn btn-primary btn-custom">Next <i class="fas fa-arrow-right"></i></a>
+  </div>
+
+  <div class="footer">
+    &copy; 2025 Probability Learning • Designed with ❤️
+  </div>
+
+</body>
+
+</html>
